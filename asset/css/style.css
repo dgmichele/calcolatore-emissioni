@@ -1,0 +1,369 @@
+/*Stile generale */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #d1fcbd;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+main{
+    padding-top: 45px;
+    flex-grow: 1;
+}
+
+h1{
+    font-size: 35px;
+    color: #1e1e1e;
+    letter-spacing: -1.5px;
+}
+
+p{
+    font-size: 17px;
+    color: #5f5f5f;
+}
+
+@media screen and (max-width: 1025px) and (min-width:601px){
+    main{
+        padding-top: 60px;
+        flex-grow: 1;
+    }
+   
+    h1{
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (min-width: 1026px){
+    main{
+        padding-top: 60px;
+        flex-grow: 1;
+    }
+    
+    h1{
+        font-size: 48px;
+    }
+}
+
+/*Fine tile generale */
+
+/* Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #faf8cf;
+    border-bottom: 3px solid black;
+    padding: 10px 0 10px 0;
+}
+
+.contenitore-header{
+    width: 90%;
+    display: flex;
+}
+
+.interno-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: -2px;
+}
+
+.img-logo{
+    width: 50px;
+}
+
+.bottone-header{
+    text-decoration: none;
+    display: inline-block;
+    background-color:#104210;
+    padding: 10px 25px;
+    color:#fffef2;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bottone-header:hover{
+    background-color: #357a17;
+}
+
+.bottone-header:active{
+    background-color: #5BB434;
+}
+
+@media screen and (max-width: 1025px) and (min-width:601px){
+    .contenitore-header{
+        max-width: 85%;
+    }
+
+    .bottone-header{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1026px){
+    .contenitore-header{
+        max-width: 1200px;
+    }
+
+    .bottone-header{
+        font-size: 18px;
+    }
+}
+
+/* Fine header */
+
+/* Titolo */
+.contenitore-titolo{
+    display: flex;
+    justify-content: center;
+ }
+
+ .interno-titolo{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+ }
+
+ .titolo{
+    margin-bottom: 10px;
+ }
+
+ @media screen and (max-width: 1025px) and (min-width:601px){
+
+    .interno-titolo{
+        max-width: 450px;
+        min-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1026px){
+
+    .interno-titolo{
+        max-width: 450px;
+        min-width: 450px;
+    }
+}
+
+ /* Fine Titolo */
+
+/* Calcolatore */
+
+.contenitore-calcolatore{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.interno-calcolatore{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #1e1e1e;
+    border-radius: 15px;
+    background-color: #faf8cf;
+}
+
+.contenitore-input{
+    margin-bottom: 20px;
+}
+
+.contenitore-input:last-of-type{
+    margin-bottom: 30px;
+}
+
+label{
+    color: #5f5f5f;
+    font-size: 17px;
+}
+
+input{
+    width: 100%;
+    margin-top: 10px;
+    color: #1e1e1e;
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid #1e1e1e;
+    border-radius: 7px;
+    background-color: #fffef2;
+    outline: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+input:focus{
+    border: 3px solid #1e1e1e;
+}
+
+button{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    background-color:#104210;
+    padding: 15px 25px;
+    color:#fffef2;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #357a17;
+}
+
+button:active{
+    background-color: #5BB434;
+}
+
+#indicatore-risultato{
+    display: inline;
+    color: #1e1e1e;
+    font-size: 22px;
+}
+
+#risultato-span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#risultato{
+    width:100%;
+    font-weight: 700;
+    margin-top: 20px;
+    color:#5BB434;
+    background-color: #fffef2;
+    padding: 20px 30px;
+    border-radius: 7px;
+    border: 2px solid #5BB434;
+    border-left: 7px solid #5BB434;
+}
+
+@media screen and (max-width: 1025px) and (min-width:601px){
+
+    .interno-calcolatore{
+        max-width: 500px;
+        min-width: 500px;
+        padding: 25px;
+    }
+
+    .contenitore-input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .contenitore-input:last-of-type{
+        margin-bottom: 30px;
+    }
+
+    label{
+        width: 60%;
+    }
+
+    input{
+        width: 40%;
+        float: right;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1026px){
+
+    .interno-calcolatore{
+        max-width: 500px;
+        min-width: 500px;
+        padding: 30px;
+    }
+
+    .contenitore-input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .contenitore-input:last-of-type{
+        margin-bottom: 30px;
+    }
+
+    label{
+        width: 60%;
+    }
+
+    input{
+        width: 40%;
+        float: right;
+        margin-top: 0;
+    }
+}
+
+/* Fine calcolatore */
+
+/* Footer*/
+
+.contenitore-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #faf8cf;
+    border-top: 3px solid #1e1e1e ;
+    padding: 50px;
+}
+
+.interno-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+.icona{
+    color: #104210;
+    margin-left: 0;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.icona:hover{
+    color:#357a17;
+}
+
+.icona:active{
+    color: #5BB434;
+}
+
+.testo-footer{
+    text-align: center;
+    font-size: 15px ;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Fine footer */

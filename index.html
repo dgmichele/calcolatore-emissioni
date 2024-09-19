@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7fa"/>
+    <title>Calcolatore emissioni carbonio</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/Calcolatore-emissioni/asset/img/calcolatore-emissioni.webp">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header>
+    <div class="contenitore-header">
+        <div class="interno-header">
+            <a class="logo" href="#"><img class="img-logo" src="/Calcolatore-emissioni/asset/img/logo.webp" alt="logo"></a>
+            <a class="bottone-header" href="https://dgmichele.github.io/Il-mio-portfolio/" rel="noopener" target="_blank">Portfolio</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="contenitore-titolo">
+    <div class="interno-titolo">
+        <h1 class="titolo">Quanto inquini?</h1>
+        <p class="testo-titolo">Calcola qui in basso le tue emissioni di carbonio e scopri il tuo impatto sull'ambiente.</p>
+    </div>
+</section>
+    
+<div class="contenitore-calcolatore">
+    <div class="interno-calcolatore">
+        <div class="calcolatore">
+            
+            <!-- Form per inserire i dati -->
+            <form id="emissioniForm">
+                <div class="contenitore-input">
+                    <label for="energia">Consumo energetico (in kWh):</label>
+                    <input type="number" id="energia" required>
+                </div>
+                <div class="contenitore-input">
+                    <label for="chilometri">Chilometri percorsi (in km):</label>
+                    <input type="number" id="chilometri" required>
+                </div>      
+                <button type="submit">Calcola Emissioni</button>
+            </form>
+            
+            <div class="risultato-emissioni"></div>
+            <!-- Area per mostrare il risultato -->
+
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer></footer>
+    <div class="contenitore-footer">
+      <div class="interno-footer">
+        <a class="icona" href="https://github.com/dgmichele" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="icona" href="https://www.linkedin.com/in/micheledelgiudice96" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p class="testo-footer">Copyright © 2024 Michele del Giudice. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="asset/js/script.js"></script>
+
+</body>
+</html>
